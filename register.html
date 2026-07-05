@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login | EduCareer Guide</title>
+    <title>Register | EduCareer Guide</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,12 +17,17 @@
     <div class="background-orb orb-two" aria-hidden="true"></div>
 
     <main class="login-shell">
-      <section class="login-card" aria-labelledby="login-title">
+      <section class="login-card" aria-labelledby="register-title">
         <div class="login-brand">EduCareer Guide</div>
-        <h1 id="login-title">Welcome back</h1>
-        <p>Sign in to continue your learning and career journey.</p>
+        <h1 id="register-title">Create your account</h1>
+        <p>Start building the right learning and career plan for your next steps.</p>
 
         <form class="login-form">
+          <label class="field">
+            <span>Full name</span>
+            <input type="text" placeholder="Your name" />
+          </label>
+
           <label class="field">
             <span>Email address</span>
             <input type="email" placeholder="you@example.com" />
@@ -30,23 +35,20 @@
 
           <label class="field">
             <span>Password</span>
-            <input type="password" placeholder="Enter your password" />
+            <input type="password" placeholder="Create a password" />
           </label>
 
-          <div class="form-row">
-            <label class="checkbox">
-              <input type="checkbox" />
-              <span>Remember me</span>
-            </label>
-            <a href="#">Forgot password?</a>
-          </div>
+          <label class="field">
+            <span>Confirm password</span>
+            <input type="password" placeholder="Confirm your password" />
+          </label>
 
-          <button class="btn btn-primary full-width" type="submit">Sign In</button>
+          <button class="btn btn-primary full-width" type="submit">Create account</button>
         </form>
 
         <p class="login-footnote">
-          New here?
-          <a href="register.html">Create an account</a>
+          Already a member?
+          <a href="login.html">Sign in</a>
         </p>
       </section>
     </main>
