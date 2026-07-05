@@ -25,6 +25,14 @@ body {
   line-height: 1.6;
 }
 
+body.login-page {
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background: radial-gradient(circle at top left, rgba(76, 182, 255, 0.25), transparent 25%),
+    linear-gradient(135deg, #050b14 0%, #0f2035 45%, #142c47 100%);
+}
+
 img {
   max-width: 100%;
 }
@@ -221,6 +229,131 @@ a {
   justify-content: space-between;
   align-items: center;
   color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.background-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(40px);
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.orb-one {
+  width: 280px;
+  height: 280px;
+  background: rgba(76, 182, 255, 0.4);
+  top: -60px;
+  left: -70px;
+}
+
+.orb-two {
+  width: 320px;
+  height: 320px;
+  background: rgba(45, 140, 255, 0.28);
+  bottom: -100px;
+  right: -60px;
+}
+
+.login-shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 2rem 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.login-card {
+  width: min(440px, 100%);
+  padding: 2rem;
+  border-radius: 24px;
+  background: rgba(7, 17, 31, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(16px);
+}
+
+.login-brand {
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.7rem;
+}
+
+.login-card h1 {
+  margin: 0 0 0.4rem;
+  font-size: 1.8rem;
+}
+
+.login-card p {
+  color: var(--muted);
+  margin-top: 0;
+}
+
+.login-form {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.field {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.field span {
+  font-size: 0.95rem;
+  color: #dce7f5;
+}
+
+.field input {
+  width: 100%;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.06);
+  color: var(--text);
+  padding: 0.9rem 1rem;
+  border-radius: 12px;
+  outline: none;
+}
+
+.field input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(76, 182, 255, 0.2);
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.93rem;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--muted);
+}
+
+.form-row a,
+.login-footnote a {
+  color: var(--accent);
+}
+
+.full-width {
+  width: 100%;
+  border: 0;
+  cursor: pointer;
+}
+
+.login-footnote {
+  margin-top: 1rem;
+  text-align: center;
   font-size: 0.95rem;
 }
 
